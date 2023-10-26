@@ -36,20 +36,20 @@
 
 
 #ifndef YYIMAGE_WEBP_ENABLED
-#if __has_include(<WebP/decode.h>) && __has_include(<WebP/encode.h>) && \
-    __has_include(<WebP/demux.h>)  && __has_include(<WebP/mux.h>)
+#if __has_include(<libwebp/decode.h>) && __has_include(<libwebp/encode.h>) && \
+    __has_include(<libwebp/demux.h>)  && __has_include(<libwebp/mux.h>)
 #define YYIMAGE_WEBP_ENABLED 1
-#import <WebP/decode.h>
-#import <WebP/encode.h>
-#import <WebP/demux.h>
-#import <WebP/mux.h>
-#elif __has_include("webp/decode.h") && __has_include("webp/encode.h") && \
-      __has_include("webp/demux.h")  && __has_include("webp/mux.h")
+#import <libwebp/decode.h>
+#import <libwebp/encode.h>
+#import <libwebp/demux.h>
+#import <libwebp/mux.h>
+#elif __has_include("libwebp/decode.h") && __has_include("libwebp/encode.h") && \
+      __has_include("libwebp/demux.h")  && __has_include("libwebp/mux.h")
 #define YYIMAGE_WEBP_ENABLED 1
-#import "webp/decode.h"
-#import "webp/encode.h"
-#import "webp/demux.h"
-#import "webp/mux.h"
+#import "libwebp/decode.h"
+#import "libwebp/encode.h"
+#import "libwebp/demux.h"
+#import "libwebp/mux.h"
 #else
 #define YYIMAGE_WEBP_ENABLED 0
 #endif

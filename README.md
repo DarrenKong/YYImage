@@ -164,7 +164,7 @@ Installation
 	* MobileCoreServices
 	* libz
 4. Import `YYImage.h`.
-5. Notice: if you want to support WebP format, you may add `Vendor/WebP.framework`(static library) to your Xcode project.
+5. Notice: if you want to support WebP format, you may add `libwebp`(static library) to your Xcode project.
 
 FAQ
 ==============
@@ -359,7 +359,7 @@ if (type == YYImageTypePNG) ...
 	* MobileCoreServices
 	* libz
 4. 导入 `YYImage.h`。
-5. 注意：如果你需要支持 WebP，可以将 `Vendor/WebP.framework`(静态库) 加入你的工程。
+5. 注意：如果你需要支持 WebP，可以将 `libwebp`(静态库) 加入你的工程。
 
 常见问题
 ==============

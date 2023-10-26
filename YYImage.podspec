@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = 'YYImage'
   s.summary      = 'Image framework for iOS to display/encode/decode animated WebP, APNG, GIF, and more.'
-  s.version      = '1.1.4'
+  s.version      = '1.1.5'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'ibireme' => 'ibireme@gmail.com' }
   s.social_media_url = 'http://blog.ibireme.com'
-  s.homepage     = 'https://github.com/YYKits/YYImage'
+  s.homepage     = 'https://github.com/DarrenKong/YYImage'
   s.platform     = :ios, '8.0'
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = "9.0"
-  s.source       = { :git => 'https://github.com/YYKits/YYImage.git', :tag => s.version.to_s }
+  s.source       = { :git => 'https://github.com/DarrenKong/YYImage.git', :tag => s.version.to_s }
 
   s.requires_arc = true
   s.default_subspec = 'Core'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'WebP' do |webp|
     webp.dependency 'YYImage/Core'
-    webp.ios.vendored_frameworks = 'Vendor/WebP.framework'
+    webp.dependency 'libwebp'
   end
 
   s.subspec 'libwebp' do |libwebp|
